@@ -1,0 +1,13 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="navbar">
+    <h1>学生成绩管理系统</h1>
+    <a href="${pageContext.request.contextPath}/index.jsp">首页</a>
+    <a href="${pageContext.request.contextPath}/student">学生管理</a>
+    <a href="${pageContext.request.contextPath}/course">课程管理</a>
+    <a href="${pageContext.request.contextPath}/score">成绩管理</a>
+    <a href="${pageContext.request.contextPath}/stat">统计分析</a>
+    <span class="right">
+        当前用户：${sessionScope.loginUser.username}　
+        <a href="${pageContext.request.contextPath}/logout">退出</a>
+    </span>
+</div>
